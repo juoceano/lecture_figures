@@ -7,3 +7,4 @@ dependencies:
   - cartopy
   - nb_conda_kernels
   - jupyter
+  - pycodestyle
