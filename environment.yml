@@ -1,0 +1,10 @@
+name: ocean_figures
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - cartopy
+  - nb_conda_kernels
+  - jupyter
+  - flake8
