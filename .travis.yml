@@ -2,6 +2,10 @@ language: generic
 
 sudo: false
 
+env:
+  global:
+    - secure: "I2pTINMXgSMiMIfIXytpb/wdzduRLJakaJ6pDoIq3/O2l9IXfqWgfvo680aZQaU/3AuZT2V+vlpuCXHPFSI9lqRGoF0gOJYnve9IgM8e9PJjcaWWVeZJlwcEFeR08nl0TWR2BhLjXZAdEYKgE/192HeDkRFWFf8qBlLdun7zDZ7fDk/3v4A679qM+hvHYYb4zBj1+2o6Q+dnw3SsN+3r8+wMjcAuIPjnIGBkE5YqKgPir1Z7OSaFtmvtttzep5HelbNNW0ybWoGHCjbXlUAO7Gs3HFutJBbLrdL64L1MrQ94pVFyQBxzRIHDJ65wSFyJQtCGncx/DkCdqn5yu6zN+fLFiLmNt9vqsgzC4MtA9jpbRcRbJ+wpMm8JV6NmA1J1NDE8C8RN5QnLOTYtlyYOZmIF1juldAJTKi3ZwZ6ADir4JKuyLHvrzg3Auap9qZXlzucGsY8c8oNh/AiWlde400q1YRetkpU5SbehLL6UNKyuNAYC6Lryh878d/Xw3F4AoJfX1J6KEtWAdlqkqRjpFNXQhcsCPlVopQZpsL0xdp1xT2rcaB2Yjn+paUDRm8aQ2tEdTlTNWygj9bqUaLNI2Rcix+1uf0GcgH/TbeCfGi3EVsHQnJK9td38r9DGw0UYY6TzAyH4g4dw6Zw7Wwl9xPtSJXWKfcEMgawFoPZCOFU="
+
 matrix:
   fast_finish: true
   include:
@@ -24,11 +28,13 @@ before_install:
   - export PATH="$HOME/miniconda/bin:$PATH"
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
-  - conda update --quiet conda
+  - conda update --quiet --quiet conda
 
 install:
   - conda env create --quiet --file "environment.yml"
   - source activate "ocean_figures"
+  # Publish docs.
+  - conda install --yes --quiet -c conda-forge doctr
   # Debug.
   - conda info -a
   - conda list
@@ -52,4 +58,5 @@ script:
   - if [ $TEST_TARGET == 'publish' ]; then
       cd webpage && python make_index.py && cd ..;
       find notebooks/ -maxdepth 1 -name \*.ipynb -print0 | xargs -0 -n1 jupyter nbconvert --to=markdown --template="jupyter-jekyll.tpl" --output-dir=webpage/_notebooks ;
+      doctr deploy --built-docs=webpage --gh-pages-docs . ;
     fi
