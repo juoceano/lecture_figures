@@ -33,8 +33,8 @@ before_install:
 install:
   - conda env create --quiet --file "environment.yml"
   - source activate "ocean_figures"
-  # Publish docs.
-  - conda install --yes --quiet -c conda-forge doctr
+  # Publish docs and lint code.
+  - conda install --yes --quiet -c conda-forge doctr flake8
   # Debug.
   - conda info -a
   - conda list
