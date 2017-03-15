@@ -5,7 +5,7 @@ Figures, and the notebooks used to create them, for lectures in oceanography.
 
 | Platform       | Status                                                                                                                                             |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Linux and OS X | [![Build Status](https://travis-ci.org/ioos/lecture_figures.svg?branch=master)](https://travis-ci.org/juoceano/lecture_figures)                    |
+| Linux and OS X | [![Build Status](https://travis-ci.org/juoceano/lecture_figures.svg?branch=master)](https://travis-ci.org/juoceano/lecture_figures)                    |
 | Windows        | [![Build status](https://ci.appveyor.com/api/projects/status/o66cvyp766w5bd10?svg=true)](https://ci.appveyor.com/project/juoceano/lecture-figures) |
 
 
