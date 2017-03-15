@@ -6,5 +6,8 @@ dependencies:
   - python=3.6
   - cartopy
   - ctd
+  - iris
   - jupyter
   - nb_conda_kernels
+  - oceans
+  - palettable
