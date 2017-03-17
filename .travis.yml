@@ -61,5 +61,5 @@ script:
   - if [ $TEST_TARGET == 'publish' ]; then
       find notebooks/ -maxdepth 1 -name \*.ipynb -print0 | xargs -0 -n1 jupyter nbconvert --to=markdown --template="jupyter-jekyll.tpl" --output-dir=webpage/_notebooks ;
       pushd webpage && python make_index.py && popd;
-      doctr deploy --built-docs=webpage --gh-pages-docs . ;
+      doctr deploy --built-docs=webpage . ;
     fi
