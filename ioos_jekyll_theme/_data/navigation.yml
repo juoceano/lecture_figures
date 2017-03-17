@@ -1,0 +1,39 @@
+# main links links
+main:
+  - title: "Header 1"
+    url: /pages/readme/
+
+  - title: "Header 2"
+    url: /pages/readme/
+
+  - title: "Header 3"
+    url: /pages/readme/
+
+
+
+
+
+# site_nav links
+site_nav:
+  - title: Side Nav Menu 1
+    children:
+      - title: "Readme"
+        url: /pages/readme/
+      - title: "Child 2"
+        url: /pages/page_2/
+      - title: "Child 3"
+        url: /pages/page_3/
+
+  - title: Side Nav Menu 2
+    children:
+      - title: "Child 1"
+        url: /pages/readme/
+      - title: "Child 2"
+        url: /pages/page_2/
+      - title: "Child 3"
+        url: /pages/page_3/
+
+  - title: Jekyll HOWTO
+    children:
+      - title: "Setting up Jekyll"
+        url: /pages/jekyll/
