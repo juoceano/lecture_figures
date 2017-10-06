@@ -21,6 +21,9 @@
 ./_notebooks/WOCE-temperature_files/WOCE-temperature_7_0.png
 ./_notebooks/ctd_profile.md
 ./_notebooks/ctd_profile_files/ctd_profile_3_0.png
+./_notebooks/nearest_coast_point.md
+./_notebooks/nearest_coast_point_files/nearest_coast_point_4_0.svg
+./_notebooks/nearest_coast_point_files/nearest_coast_point_9_0.png
 ./_notebooks/satellite_images_rivers.md
 ./_notebooks/satellite_images_rivers_files/satellite_images_rivers_10_0.png
 ./_notebooks/satellite_images_rivers_files/satellite_images_rivers_12_0.png
@@ -35,6 +38,7 @@
 ./images/WOA13_cross-sections.png
 ./images/WOCE-temperature.png
 ./images/ctd_profile.png
+./images/nearest_coast_point.png
 ./images/satellite_images_rivers.png
 ./images/water_mass.png
 ./index.md
