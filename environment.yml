@@ -4,6 +4,8 @@ channels:
   - defaults
 dependencies:
   - python=3.6
+  - folium
+  - geopandas
   - iris
   - jupyter
   - nb_conda_kernels
