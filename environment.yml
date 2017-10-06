@@ -12,3 +12,5 @@ dependencies:
   - nbdime
   - oceans
   - palettable
+  - pandas
+  - shapely
