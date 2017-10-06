@@ -2,6 +2,9 @@
 ./_config_dev.yml
 ./_data/navigation.yml
 ./_data/ui-text.yml
+./_notebooks/Brazil_rivers.md
+./_notebooks/Brazil_rivers_files/Brazil_rivers_1_0.svg
+./_notebooks/Brazil_rivers_files/Brazil_rivers_7_0.png
 ./_notebooks/TS-exercise.md
 ./_notebooks/TS-exercise_files/TS-exercise_2_1.png
 ./_notebooks/WOA13_cross-sections.md
@@ -27,6 +30,7 @@
 ./_notebooks/satellite_images_rivers_files/satellite_images_rivers_8_0.png
 ./_notebooks/water_mass.md
 ./_notebooks/water_mass_files/water_mass_3_0.png
+./images/Brazil_rivers.png
 ./images/TS-exercise.png
 ./images/WOA13_cross-sections.png
 ./images/WOCE-temperature.png
