@@ -10,5 +10,5 @@ layout: single
 <div><a href="{{ site.url }}{{ site.baseurl }}//notebooks/WOCE-temperature"><figcaption>WOCE temperature section</figcaption><img src="images/WOCE-temperature.png"></a></div>
 <div><a href="{{ site.url }}{{ site.baseurl }}//notebooks/WOA13_cross-sections"><figcaption>WOA13 cross sections</figcaption><img src="images/WOA13_cross-sections.png"></a></div>
 <div><a href="{{ site.url }}{{ site.baseurl }}//notebooks/TS-exercise"><figcaption>T-S plotting exercise</figcaption><img src="images/TS-exercise.png"></a></div>
-<div><a href="{{ site.url }}{{ site.baseurl }}//notebooks/Brazil_rivers"><figcaption>I love ? unicode!</figcaption><img src="images/Brazil_rivers.png"></a></div>
+<div><a href="{{ site.url }}{{ site.baseurl }}//notebooks/Brazil_rivers"><figcaption>NE data</figcaption><img src="images/Brazil_rivers.png"></a></div>
 </div>
